@@ -1,4 +1,5 @@
 import { userModel } from "../models/user.model.js"
-export function leerService(){
-    return userModel()
+export async function leerService(){
+    const User = await userModel();
+    return User.find()
 }
