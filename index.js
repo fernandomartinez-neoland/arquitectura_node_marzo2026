@@ -10,7 +10,7 @@ api.get('/',(req, res)=>{
     res.send("conectadisimo")
 })
 
-// si colocamos una funcion que hemos importado esta por defecto toma como parametro a req(peticion) y res(respuesta)
+// si colocamos una funcion que hemos importado, esta por defecto toma como parametro a req(peticion) y res(respuesta)
 api.post('/lectura',leer)
 
 api.listen(port, ()=>{
